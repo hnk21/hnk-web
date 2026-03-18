@@ -1,12 +1,12 @@
-if(typeof Object.create!=="function"){
-Object.create=function(o){
-function F(){
-};
-F.prototype=o;
-return new F();
-};
+if (typeof Object.create!=="function") {
+    Object.create = function(o) {
+        function F() {};
+        F.prototype = o;
+        return new F();
+    };
 }
-var ua={toString:function(){
+
+var ua = {toString:function(){
 return navigator.userAgent;
 },test:function(s){
 return this.toString().toLowerCase().indexOf(s.toLowerCase())>-1;
@@ -758,8 +758,8 @@ if(ua.ie){
 _57.style.width="1px";
 }
 setTimeout(function(){
-_57.style.width="";
-_57.style.marginLeft="";
+    _57.style.width="";
+    _57.style.marginLeft="";
 },0);
 cssHelper.removeListener("cssMediaQueriesTested",arguments.callee);
 });

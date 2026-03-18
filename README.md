@@ -2,4 +2,6 @@
 
 Last updated: 2026-01-29
 
-A pretty empty website, to showcase some personal projects.
+My website.
+
+It's pretty empty now, plan to use this to showcase my portfolio, maybe some cool personal projects once they are ready.
